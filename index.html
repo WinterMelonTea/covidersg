@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>COVIDER SG</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a136a8d89b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- Import your CSS last to override Bootstrap defaults -->
+  </head>
+
+  <body>
+
+    <section id='navmenu' class='navmenu'>
+        <nav class='navbar fixed-top navbar-expand-lg navbar-dark'>
+          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#collapsable' aria-controls='navbarNav' aria-expaded='false' aria-label='Toggle Navigation'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='collapsable'>
+            <ul class='navbar-nav ml-auto'>
+              <li class='nav-item active'>
+                <a class='nav-link' href='#'>HOME</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  STATISTICS & GRAPHS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="statistics-and-graphs.html">GLOBAL OUTLOOK</a>
+                  <a class="dropdown-item" href="statistics-and-graphs2.html">SINGAPORE SPECIFIC</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">FINANCIAL IMPLICATIONS (Coming Soon)</a>
+                  <a class="dropdown-item" href="#">EPIDEMIC SIMULATOR (Coming Soon)</a>
+                </div>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>RESOURCES</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>MORE INFO</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>ABOUT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+
+
+    <section id='title' class='title'>
+      <div>
+        <h1>COVIDER SG</h1>
+        <h3>A One-Stop Singapore-Based COVID-19 Tracker</h3>
+      </div>
+    </section>
+
+    <section id='overview'>
+      <div>
+        <h3>OVERVIEW</h3>
+        <p>On November 2019, an outbreak involving a flu-like virus had transpired in Wuhan, China. Due to insufficient information, the virus was not able to be contained in time before it had spread worldwide by means of air travel through human hosts. Details of the virus were only discovered in early 2020, describing the virus as similar to the common flu, except that it was more infectious, but less lethal. By then, the virus had made its presence in many countries and was declared an epidemic by WHO.</p>
+        <p>Currently, the virus has infected over 7 million people and has been involved in the deaths of over a million.</p>
+        <p>This website was created to help Singaporeans obtain the latest information about COVID-19 from multiple sources in one handy place. This website also aims to present data in interactive, insightful and visually-appealing graphs. Please note that this project will see improvements and updates along the way and the current version may not be final.</p>
+      </div>
+    </section>
+
+
+    <section id='graph-showcase'>
+      <div>
+        <h3>STATISTICS & GRAPHS</h3>
+        <p>Below are the types of graphs you can find in this website. The data was obtained from a combination of Our World in Data (OWID) for most of the data, while data involving recovered cases come from Harvard University's database.</p>
+        <p>DISCLAIMER: The owner of the website does not own the data used in the graphs of this website. There may be some discrepancies with the data seen here and other sources. As this website was meant to be created as a personal project, please double check the actual data with other sources for more accurate information.</p>
+      </div>
+      <div class='row'>
+        <div class='gdisp col-lg-3 col-md-6'><a class='graph-disp' href='statistics-and-graphs.html'><h4>GLOBAL OUTLOOK</h4></a></div>
+        <div class='gdisp col-lg-3 col-md-6'><a class='graph-disp' href='statistics-and-graphs2.html'><h4>SINGAPORE SPECIFIC</h4></a></div>
+        <div class='gdisp col-lg-3 col-md-6'><a class='graph-disp' href=''><h4>FINANCIAL IMPLICATIONS (Coming Soon)</h4></a></div>
+        <div class='gdisp col-lg-3 col-md-6'><a class='graph-disp' href=''><h4>EPIDEMIC SIMULATOR (Coming Soon)</h4></a></div>
+      </div>
+    </section>
+
+
+
+    <section id='resources'>
+      <div>
+        <h3>RESOURCES</h3>
+        <h5>RECENT</h5>
+        <div id="testimonial-carousel" class="carousel slide" data-ride="false" data-interval='false'>
+          <ol class="carousel-indicators">
+            <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+          </ol>
+
+          <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+          <div class="carousel-inner" role='listbox'>
+
+            <div class="carousel-item active container-fluid">
+                <div class='infodiv'><a class='inforef' href='statistics-and-graphs.html'><h4>GLOBAL OUTLOOK</h4></a></div>
+            </div>
+
+            <div class="carousel-item container-fluid">
+              <div class='infodiv'><a class='inforef' href='statistics-and-graphs2.html'><h4>SINGAPORE SPECIFIC</h4></a></div>
+            </div>
+          </div>
+
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        <h5>POPULAR</h5>
+      </div>
+    </section>
+
+    <section id='more-info'>
+      <div>
+        <h3>MORE INFO</h3>
+        <div class='row'>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-img'><a href='https://www.cdc.gov/'><img src='images/cdc-logo.jpg' /></div></a>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-text'><p>The Centers of Disease Control and Prevention website provides more supporting information about the virus and what you can do to help stop the spread of the disease.</p></div>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-img'><a href='https://www.who.int/'><img src='images/world-health-organization-vector-logo.png' /></a></div>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-text'><p>The World Health Organization is the cornerstone to the fight against COVID-19. The website contains all the up-to-date information about the virus globally.</p></div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-img'><a href='https://www.moh.gov.sg/'><img src='images/moh-logo-ministry-of.jpg' /></a></div>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-text'><p>The Ministry of Health Singapore website will detail all Singapore-related COVID-19 cases and also raise any alerts about the situation in Singapore.</p></div>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-img'><a href='https://www.channelnewsasia.com/'><img src='images/cna-default-image.png' /></a></div>
+          <div class='col-lg-3 col-md-6 col-sm-12 mi-text'><p>Channel News Asia is Singapore's news station that will deliver news about the COVID-19 for Singapore and other countries.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id='footer' class='footer'>
+      <div>
+        <i class='footer-icon fab fa-facebook-f fa-2x'></i>
+        <i class='footer-icon fab fa-twitter fa-2x'></i>
+        <i class='footer-icon fab fa-instagram fa-2x'></i>
+        <i class='footer-icon fas fa-envelope fa-2x'></i>
+        <br>
+        <p>Copyright 2020. COVIDER SG.</p>
+      </div>
+    </section>
+
+
+
+  </body>
+</html>

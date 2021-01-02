@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>COVIDER SG</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a136a8d89b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- Import your CSS last to override Bootstrap defaults -->
+  </head>
+
+  <body>
+    <section id='stat-nav' class='navmenu'>
+        <nav class='navbar fixed-top navbar-expand-lg navbar-dark'>
+          <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#collapsable' aria-controls='navbarNav' aria-expaded='false' aria-label='Toggle Navigation'>
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='collapsable'>
+            <ul class='navbar-nav ml-auto'>
+              <li class='nav-item'>
+                <a class='nav-link' href='index.html'>HOME</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  STATISTICS & GRAPHS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="statistics-and-graphs.html">GLOBAL OUTLOOK</a>
+                  <a class="dropdown-item" href="statistics-and-graphs2.html">SINGAPORE SPECIFIC</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">FINANCIAL IMPLICATIONS (Coming Soon)</a>
+                  <a class="dropdown-item" href="#">EPIDEMIC SIMULATOR (Coming Soon)</a>
+                </div>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>RESOURCES</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>MORE INFO</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>ABOUT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+
+    <section id='stat-title' class='title'>
+      <div>
+        <h1>GLOBAL OUTLOOK</h1>
+        <h3>Global COVID-19 Data Graphs</h3>
+      </div>
+    </section>
+
+    <div id='divider-case'>
+      <div id='divider'></div>
+    </div>
+
+    <section id='stat-subtitle1' class='subtitle'>
+      <h3>Graph 1: Cases Statistics</h3>
+      <p>The following graph will show totals and new cases of infections, deaths and recoveries, as well as the active cases (total cases - deaths - recovered). Please click on the box with the country names to select a particular country, or select 'World' for a global outlook.</p>
+      <p>Kindly note that some countries may not have been included due to insufficient information. Some of the information presented may look off due to some errors and unrefinement in the data sets - these will be improved upon when a better dataset can be found.</p>
+    </section>
+
+    <section id='stat-graphs1' class='graph1'>
+      <div class='iframediv'>
+        <iframe id='multi-graph' src='https://cov19proj.herokuapp.com/' title='Covid19 Graph' frameBorder='0'></iframe>
+      </div>
+    </section>
+
+    <section id='stat-subtitle2' class='subtitle'>
+      <h3>Graph 2: Global Choropleth Mapbox</h3>
+      <p>The following graph will show the total cases for the world as a choropleth mapbox. It will also show the changes (monthly) from Late January to Early October.</p>
+      <p>Countries that remain white are countries not included in the data set.</p>
+    </section>
+
+    <section id='stat-graphs2' class='graph2'>
+      <iframe id='chorograph' src='covid-choro-world.html' title='Covid19 Choro' scrolling='no' frameBorder='0'></iframe>
+    </section>
+
+    <section id='footer' class='footer'>
+      <div>
+        <i class='footer-icon fab fa-facebook-f fa-2x'></i>
+        <i class='footer-icon fab fa-twitter fa-2x'></i>
+        <i class='footer-icon fab fa-instagram fa-2x'></i>
+        <i class='footer-icon fas fa-envelope fa-2x'></i>
+        <br>
+        <p>Copyright 2020. COVIDER SG.</p>
+      </div>
+    </section>
+
+
+  </body>
+</html>
