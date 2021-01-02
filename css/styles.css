@@ -1,0 +1,202 @@
+html, body{
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Common Formatting */
+.title {
+  text-align: center;
+  padding: 30% 10%;
+}
+
+h1{
+  font-size: 5em;
+}
+
+h1, h3, nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Arvo', serif;
+}
+
+h1, h2, h3, h4, h5, em, p, a{
+  color: white;
+}
+
+#overview, #graph-showcase, #more-info, .subtitle{
+  padding: 15% 15%;
+}
+
+#resources {
+  padding: 10% 0;
+}
+
+.title, #graph-showcase, #more-info, .subtitle{
+  background-color: #3B3838;
+}
+
+nav {
+  background-color: rgba(59, 56, 56, 0.75);
+}
+
+#overview, #resources{
+  background-color: #7F7F7F;
+}
+
+#overview h3, #graph-showcase h3, #resources h3, #more-info h3, .subtitle h3{
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 3%;
+}
+
+#divider-case{
+  background-color: #3B3838;
+}
+
+#divider {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+
+/* For Graphs */
+#multi-graph{
+  display:block;
+  width:100%;
+  height:2300px;
+  overflow-y:hidden;
+}
+
+#chorograph{
+  width:100%;
+  height:1000px;
+  overflow-y:hidden;
+  padding: 3% 3%;
+  background-color: grey;
+}
+
+#sg-graph-periods {
+  width: 100%;
+  height: 1000px;
+  overflow-y:hidden;
+}
+
+
+@media (max-width:1006px) {
+  #multi-graph{
+    height: 3700px;
+  }
+
+  #chorograph{
+    height:700px;
+    padding: 0;
+  }
+}
+
+@media (max-width:590px) {
+  #multi-graph{
+    height: 4000px;
+  }
+}
+
+/* Graph Showcase */
+.graph-disp:link, .graph-disp:visited {
+  background-color: #7F7F7F;
+  color: white;
+  text-decoration: none;
+}
+
+.graph-disp {
+  padding: 50% 20%; /* Use padding to determine the size. */
+  display: block;
+  vertical-align: top;
+}
+
+.gdisp {
+  padding-top: 5%;
+}
+
+.graph-disp h4 {
+  margin: 0;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* For Info Box */
+.inforef:link, .inforef:visited {
+  background-color: #3B3838;
+  color: white;
+  text-decoration: none;
+}
+
+.inforef {
+  padding: 10% 10%; /* Use padding to determine the size. */
+  display: block;
+  vertical-align: top;
+}
+
+.inforef h4 {
+  margin: 0;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+#resources h5 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* For More Info */
+.mi-img, .mi-text {
+  padding-top: 50px;
+}
+
+.mi-img img{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:1436px) {
+  .mi-img{
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* For the Footer */
+.footer{
+  padding: 5% 15%;
+  text-align: center;
+}
+
+.footer-icon{
+  margin: 20px 10px;
+}
+
+.footer p{
+  font-family: 'Arvo', serif;
+  color: #3B3838;
+}
