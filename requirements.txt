@@ -31,7 +31,7 @@ scipy==1.5.2
 six==1.15.0
 statsmodels==0.12.0
 ua-parser==0.10.0
-urllib3==1.25.10
+urllib3==1.26.5
 Werkzeug==1.0.1
 xlrd==1.2.0
 dash-bootstrap-components==0.10.7
